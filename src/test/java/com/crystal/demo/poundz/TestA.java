@@ -21,6 +21,6 @@ public class TestA {
         int i = 2, j=3;
         Mockito.when(b.bAdd(i,j)).thenReturn(5);
         Assert.assertEquals(5, a.aAdd(i,j));
-        Mockito.verify(b).bAdd(i, j);
+        Mockito.verify(b, Mockito.times(1)).bAdd(i, j);
     }
 }
