@@ -24,6 +24,7 @@ public class SampleController {
     private class Hello{
         private String title;
         private String value;
+        private String anything;
 
         public Hello(String title, String value) {
             this.title = title;
